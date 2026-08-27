@@ -1,8 +1,9 @@
 import "./App.css";
 // import ControlledField from "./components/ControlledField/ControlledField";
-import UncontrolledField from "./components/UncontrolledField/UncontrolledField";
+// import UncontrolledField from "./components/UncontrolledField/UncontrolledField";
 // import FormAction from './components/FormAction/FormAction'
 // import SimpleFrom from './components/SimpleForm/SimpleFrom'
+import HookForm from './components/Hooks/HookForm.jsx'
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
 
       {/* <SimpleFrom></SimpleFrom> */}
       {/* <FormAction></FormAction> */}
-      {/* <ControlledField></ControlledField>*/}
-      <UncontrolledField></UncontrolledField>
+      {/* <ControlledField></ControlledField> */}
+      {/* <UncontrolledField></UncontrolledField> */}
+      <HookForm></HookForm>
     </>
   );
 }

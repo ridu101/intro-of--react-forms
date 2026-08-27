@@ -1,15 +1,25 @@
 // import React from 'react';
 
+import { useState } from "react";
 import ProductForm from "./ProductForm";
-import ProductTable from "./Producttable";
+import ProductTable from "./ProductTable";
+
 
 const ProductManagement = () => {
-    return (
-        <div>
-            <ProductForm></ProductForm>
-            <ProductTable></ProductTable>
-        </div>
-    );
+  const [products, setProducts] = useState([]);
+
+  const handleAddCartProduct = (newProduct) => {
+    const newProducts = [...products, newProduct];
+    setProducts(newProducts);
+  };
+
+  return (
+    <div>
+      <ProductForm handleAddCartProduct={handleAddCartProduct}></ProductForm>
+      <ProductTable products={products}></ProductTable>
+   
+    </div>
+  );
 };
 
 export default ProductManagement;

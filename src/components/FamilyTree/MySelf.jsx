@@ -2,12 +2,13 @@
 
 import Spacial from "./Spacial";
 
-const MySelf = () => {
+const MySelf = ({asset}) => {
+    
     return (
         <div>
             <h3>Ridu</h3>
             <section>
-                <Spacial></Spacial>
+                <Spacial asset={asset}></Spacial>
             </section>
         </div>
     );
